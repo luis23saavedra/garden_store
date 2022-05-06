@@ -12,37 +12,44 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container-fluid">
-                <span class="navbar-brand" href="#">Tienda de plantas y jardineria<img src="img/logo.png" style="height:40px;" alt=""></span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 texto-blanco">
-                        <li class="nav-item">
-                            <a class="nav-link active " aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="categorias.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="categorias.html">Contacto</a>
-                        </li>
-
-
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
-                        <button class="btn btn-outline-success text-white" type="submit">Buscar</button>
-                    </form>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            
+            <div class="collapse navbar-collapse ps-3" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active hover" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active hover" href="#">Productos</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle active hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mi Perfil
+                  </a>
+                  <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white bg-dark hover" href="#">Información Personal</a></li>
+                    <li class="hover"><a class="dropdown-item text-white bg-dark hover" href="#">Historial de Ventas</a></li>
+                    <li><hr class="dropdown-divider hover"></li>
+                    <li><a class="dropdown-item text-white bg-dark hover" href="#">Seguimiento de despachos</a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link  hover margen-boton btn-outline-success btn text-white"  href="ingreso.html">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active hover margen-boton btn btn-outline-success"  href="ingreso.html"> Registrate</a>
+                </li>
+              </ul>
+              
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <section class="borde">
         <h1 class="text-white text-center">
-            Compra y estarás ayudando a la fundación...
+            Garden Store
         </h1>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
