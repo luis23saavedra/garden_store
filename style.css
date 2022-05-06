@@ -1,3 +1,16 @@
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+.hover:hover{
+    
+    background-color: #006414;
+}
+
+
 #card-border{
     border: solid 10px white;
     border-radius: 20px;
@@ -12,4 +25,8 @@
 }
 #friends-transition:hover{
     transform: scale(1.05);
+}
+.margen-boton{
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
