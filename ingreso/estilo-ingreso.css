@@ -1,0 +1,27 @@
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+.hover:hover{
+    
+    background-color: #006414;
+}
+.linea{
+    transition-property: all 4s;
+
+    /* Segundo ejemplo: Anima sólo el ancho, el resto no transicionan, cambian de golpe */
+    transition-property: width 4s;
+      
+}
+.formulario{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 60%;
+}
+.margen-boton{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
