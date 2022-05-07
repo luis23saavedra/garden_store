@@ -1,6 +1,5 @@
 body {
     background-color: rgba(79, 172, 91, 0.689);
-    
 }
 
 P {
@@ -68,7 +67,6 @@ a:hover {
 }
 
 .card {
-    
     background-color: rgba(0, 67, 70, 0.502);
 }
 
@@ -117,7 +115,12 @@ a:hover {
 }
 
 #features {
-    background-image: url("img/fondo´plantas.jpg");
+    background: rgba(0, 0, 0, 0.5) url("img/fondo´plantas.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
 .rounded-circle {
@@ -125,14 +128,17 @@ a:hover {
     height: 50px;
 }
 
-.service{
+.service {
     text-align: center;
     justify-content: center;
     align-items: center;
     align-content: center;
-
 }
 
-.container-service{
-   margin-left: 35%;
+.container-service {
+    margin-left: 35%;
+}
+
+.fw-bolder {
+    text-decoration: none;
 }
