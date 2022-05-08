@@ -30,7 +30,7 @@ a:hover {
 .borde {
     margin-left: 8rem;
     margin-right: 8rem;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .borde2 {
@@ -141,4 +141,5 @@ a:hover {
 
 .fw-bolder {
     text-decoration: none;
+    margin-top: -70px;
 }
