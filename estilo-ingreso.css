@@ -1,0 +1,40 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+}
+
+.hover:hover{
+    
+    background-color: #006414;
+}
+.margen-boton{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.boton{
+    text-decoration: none; 
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px; 
+    padding: 8px; 
+}
+
+.formulario{
+    margin-top: 90px;
+    margin-left: 10%;
+    margin-right: 60px;
+    
+    
+}
+.fondo-formulario{
+    margin-top: 20px;
+    background-color:#5dc460;
+    padding-top: 10px;
+    padding-bottom: 60px;
+    
+}
+.fondo-footer{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
