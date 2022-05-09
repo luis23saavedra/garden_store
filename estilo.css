@@ -29,6 +29,14 @@ P {
     transform: scale(1.05);
 }
 
+.card-body {
+    background-color: rgb(61, 123, 71);
+}
+
+.card-body2 {
+    padding-bottom: 20px;
+}
+
 .margen-boton {
     margin-left: 10px;
     margin-bottom: 10px;
