@@ -1,1 +1,18 @@
 
+body {
+    background-color: rgba(79, 172, 91, 0.689);
+}
+
+P {
+    color: white;
+}
+
+.h1 {
+    color: blue;
+}
+
+.borde {
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 5px;
+}
