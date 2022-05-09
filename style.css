@@ -16,3 +16,23 @@ P {
     margin-right: 8rem;
     margin-top: 5px;
 }
+
+.d-block {
+    height: 420px;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(32, 31, 31, 0.744);
+    border-radius: 15px;
+}
+
+.carousel-inner {
+    margin-top: 25px;
+}
+
+#imgcat {
+    width: 300px;
+    height: 200px;
+}
