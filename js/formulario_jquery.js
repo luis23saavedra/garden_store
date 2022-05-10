@@ -78,3 +78,33 @@ $("#guardar2").click(function() {
 
 
 })
+
+$("#formulario3").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+        password: {
+            required: true,
+            minlength: 5,
+            maxlength: 200
+        }
+    }
+})
+
+
+
+
+$("#guardar3").click(function() {
+
+    if ($("#formulario3").valid() == false) {
+        return;
+    }
+    let email = $("#email").val()
+    let password = $("#password").val()
+
+    alert("registro creado con éxito")
+
+
+})
