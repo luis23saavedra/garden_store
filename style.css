@@ -155,3 +155,9 @@ a:hover {
     width: 50px;
     height: 50px;
 }
+.fondo_cards{
+    background-color: rgb(66,132,105);
+}
+.fondo_categorias{
+    background-color: rgb(133,197,141);
+}
