@@ -124,3 +124,19 @@ a:hover {
 .card-img-top {
     height: 200px;
 }
+
+.service {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container-service {
+    margin-left: 35%;
+}
+
+.fw-bolder {
+    text-decoration: none;
+    margin-top: -70px;
+}
