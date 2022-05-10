@@ -28,11 +28,10 @@ a:hover {
 }
 
 .borde {
-    margin-left: 8rem;
-    margin-right: 8rem;
+    margin-left: 5px;
+    margin-right: 5px;
     margin-top: 5px;
 }
-
 
 .d-block {
     height: 420px;
@@ -55,8 +54,8 @@ a:hover {
 }
 
 #posicion {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 60px;
     margin-bottom: 40px;
     align-items: center;
@@ -74,20 +73,20 @@ a:hover {
     background-color: rgba(1, 131, 138, 0.502);
     text-align: center;
     margin-top: 35px;
-    margin-right: 7rem;
-    margin-left: 7rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     margin-bottom: 15px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 20px;
 }
+
 .col-6 {
     float: none;
     margin: auto;
 }
-
 
 #card-border {
     border: solid 10px white;
@@ -141,7 +140,6 @@ a:hover {
     margin-top: -70px;
 }
 
-
 #features {
     background: rgba(0, 0, 0, 0.5) url("img/fondo´plantas.jpg");
     height: 100%;
@@ -155,41 +153,45 @@ a:hover {
     width: 50px;
     height: 50px;
 }
-.fondo_cards{
-    background-color: rgb(66,132,105);
-}
-.fondo_categorias{
-    background-color: rgb(133,197,141);
-}
-header{
-    position: sticky;
-    top: 0;
-    z-index: 100; 
+
+.fondo_cards {
+    background-color: rgb(66, 132, 105);
 }
 
-.hover:hover{
-    
+.fondo_categorias {
+    background-color: rgb(133, 197, 141);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.hover:hover {
     background-color: #006414;
 }
 
-
-#card-border{
+#card-border {
     border: solid 10px white;
     border-radius: 20px;
     overflow: hidden;
     transition: all ease-out 0.2s;
 }
-#card-border:hover{
+
+#card-border:hover {
     transform: scale(1.05);
 }
-#friends-transition{
+
+#friends-transition {
     transition: all ease-out 0.2s;
 }
-#friends-transition:hover{
+
+#friends-transition:hover {
     transform: scale(1.05);
 }
-.margen-boton{
+
+.margen-boton {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-
