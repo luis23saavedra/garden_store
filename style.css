@@ -83,6 +83,11 @@ a:hover {
     padding-bottom: 15px;
     border-radius: 20px;
 }
+.col-6 {
+    float: none;
+    margin: auto;
+}
+
 
 #card-border {
     border: solid 10px white;
