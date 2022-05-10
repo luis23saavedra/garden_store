@@ -1,209 +1,214 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>E-Jardín</title>
-  </head>
-  <body class="bg-black">
-    
-    <!-- NAVBAR -->
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          
-          <div class="collapse navbar-collapse ps-3" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active hover" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active hover" href="#">Productos</a>
-              </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle active hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Mi Perfil
-                </a>
-                <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item text-white bg-dark hover" href="#">Información Personal</a></li>
-                  <li class="hover"><a class="dropdown-item text-white bg-dark hover" href="#">Historial de Ventas</a></li>
-                  <li><hr class="dropdown-divider hover"></li>
-                  <li><a class="dropdown-item text-white bg-dark hover" href="#">Seguimiento de despachos</a></li>
-                </ul>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link  hover margen-boton btn-outline-success btn text-white"  href="ingreso.html">Iniciar sesión</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active hover margen-boton btn btn-outline-success"  href="ingreso.html"> Registrate</a>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
             
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- CARROUSEL -->     
-        
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/slide01.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slide02.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slide03.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+            <div class="collapse navbar-collapse ps-3" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active hover" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active hover" href="categorias.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle active hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mi Perfil
+                  </a>
+                  <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white bg-dark hover" href="#">Información Personal</a></li>
+                    <li class="hover"><a class="dropdown-item text-white bg-dark hover" href="#">Historial de Ventas</a></li>
+                    <li><hr class="dropdown-divider hover"></li>
+                    <li><a class="dropdown-item text-white bg-dark hover" href="#">Seguimiento de despachos</a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link  hover margen-boton btn-outline-success btn text-white"  href="ingreso.html">Iniciar sesión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active hover margen-boton btn btn-outline-success"  href="ingreso.html"> Registrate</a>
+                </li>
+                  <li class="nav-item">
+                            <a class="nav-link active hover" aria-current="page" href="webservice.html">Web Service</a>
+                        </li>
+              </ul>
               
-        
-    <!-- RIBBON -->
-
-    <!-- SEPARATOR RIBBON -->
-
-    <!-- GAMES -->
-
-    <!-- SEPARATOR FRIENDS -->
-    <div class="row">
-        <h3 class="text-center pb-5 pt-5 bg-danger text-white"> Productos Destacados</h3>
-    </div>
-    <div class="container-sm" >
-        <div class="row" >        
-            <div class="col">
-                <div class="card border w-100" id="card-border" style="width: 18rem;">
-                    <img src="img/hierbasaromaticas.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>   
             </div>
-            <div class="col">
-                <div class="card border w-100" id="card-border" style="width: 18rem;">
-                    <img src="img/REGALOS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>   
+          </div>
+        </nav>
+      </header>
+    
+    <section class="borde">
+        <h1 class="text-white text-center">
+            Garden Store
+        </h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="col">
-                <div class="card border w-100" id="card-border" style="width: 18rem;">
-                    <img src="img/SEMILLAS.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <a href="Plantas.html"> <img src="img/plantas.jpg" class="d-block w-100 " alt="imagen-noticia-1"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Plantas</h5>
+                        <p>Tenemos una increible variedad de plantas, entra y revisa todos nuestros productos.</p>
                     </div>
-                </div>   
-            </div>
-        </div>    
-    </div>
-    <div class="container-sm" >
-        <div class="row" >        
-            <div class="col">
-                <div class="card border w-100" id="card-border" style="width: 18rem;">
-                    <img src="img/card01.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="maceteros.html"> <img src="img/macetas.png" class="d-block w-100 " alt="imagen-noticia-2"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Maceteros</h5>
+                        <p>Maceteros y macetas de todos los tamaños.</p>
                     </div>
-                </div>   
-            </div>
-            <div class="col">
-                <div class="card border w-100" id="card-border" style="width: 18rem;">
-                    <img src="img/card02.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="abonos.html"> <img src="img/fertilizantes.jpg" class="d-block w-100 " alt="imagen-noticia-3"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fertilizantes y abonos</h5>
+                        <p>Todo lo que necesitas en 1 solo click.</p>
                     </div>
-                </div>   
+                </div>
             </div>
-            <div class="col">
-                <div class="card border w-100" id="card-border" style="width: 18rem;">
-                    <img src="img/card03.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>   
-            </div>
-        </div>    
-    </div>
-    <div class="row">
-        <div class="col text-center pt-4 pb-2 text-white"> Categorias</div>
-    </div>
-    <div class="row justify-content-center pt-2">
-        <div class="col-2">
-            <a href="#">Semillas</a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="col-2">
-            <a href="#">Sustratos</a>
-        </div>
-        <div class="col-2">
-            <a href="#">Hierbas Aromáticas</a>
-        </div>
-        <div class="col-2">
-            <a href="#">Regalos Especiales </a>
-        </div>
-    </div>        
 
-    <!-- SEPARATOR FRIENDS -->
-    <div class="container-fluid">
+    </section>
+
+
+    <div class="card text-center " id="posicion">
+        <img class="col-2 " src="img/logo.png" alt="...">
+        <div class="card-body2">
+            <h1 class="text-white posicion">Tienda de plantas y jardineria</h1>
+            <p class="card-text text-white posicion">Somos una tienda de plantas y jardineria que ayuda una fundación</p>
+        </div>
+    </div>
+  
+
+    <div class="container-sm">
         <div class="row">
-            <h2 class="text-center pt-4 text-white"> </h2>
-            
-        </div>
-    </div>
-        <div class="container bg-danger text-white">    
-            <div class="row justify-content-center">
-                <div class="col-3" id="friends-transition">
-                    <img src="img/figure01.png" alt="">
-                    <div class="text-center">
-                        <span>...</span>
-                    </div>
-                </div>
-                <div class="col-3" id="friends-transition">
-                    <img src="img/figure02.png" alt="">
-                    <div class="text-center">
-                        <span>...</span>
-                    </div>
-                </div>
-                <div class="col-3" id="friends-transition">
-                    <img src="img/figure03.png" alt="">
-                    <div class="text-center">
-                        <span>...</span>
+            <div class="col">
+                <div class="card border w-100" id="card-border" style="width: 18rem;">
+                    <a href="Plantas.html"> <img src="img/plantas.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white text-center">Plantas</h5>
+                        <p class="card-text">Tenemos una increible selección de plantas y flores para tu jardin.</p>
+                        <a href="plantas.html" class="btn btn-success text-center">Ver todos los productos </a>
                     </div>
                 </div>
             </div>
-        </div>    
-    <!-- NINTENDO´S PLAY -->
+            <div class="col">
+                <div class="card border w-100" id="card-border" style="width: 18rem;">
+                    <a href="macetas.html"> <img src="img/macetas.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white text-center">Macetas</h5>
+                        <p class="card-text">La maceta o macetero que buscas lo encontrarás acá, tenemos todos los tamaños.</p>
+                        <a href="macetas.html" class="btn btn-success text-center">Ver todos los productos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border w-100" id="card-border" style="width: 18rem;">
+                    <a href="fertilizantes.html"> <img src="img/fertilizantes.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body  text-center">
+                        <h5 class="card-title text-white text-center">Fertilizantes y abonos</h5>
+                        <p class="card-text">Nutrientes y abonos para que tus plantas crezcan sanas y fuertes.</p>
+                        <a href="fertilizantes.html" class="btn btn-success text-center">Ver todos los productos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- FOOTER -->
+    <form action="" class="container-form" id="formulario">
+      <h2>¿Tienes dudas o sugerencias? Envíanos un mensaje</h2>
+      <div class="form-row ">
+          <div class="form-group col-6">
+              <label class="text-white " for="inputEmail4">Email</label>
+              <input type="email" name="email" class="form-control bg-light text-black borde-gris" id="email" placeholder="Email">
+          </div>
+          <div class="form-group col-6 ">
+              <label class="text-white" for="inputPassword4">Password</label>
+              <input type="password" name="password" class="form-control bg-light text-black borde-gris" id="password" placeholder="Password">
+          </div>
+      </div>
+      <div class="form-group ">
+          <label class="text-white" for="exampleFormControlTextarea1">Déjanos un comentario</label>
+          <textarea class="form-control bg-light text-black bordes" name="mensaje" id="mensaje" rows="3"></textarea>
+      </div>
+      </div>
+      <div class="form-group ">
+          <div class="form-check ">
+              <input class="form-check-input bg-ligth " type="checkbox" id="gridCheck">
+              <label class="form-check-label text-white" for="gridCheck">
+            Acepto las políticas de privacidad
+          </label>
+          </div>
+      </div>
+      <input class="btn btn-primary text-black bg-light" type="reset" value="limpiar">
+      <button type="button" id="guardar" class="btn btn-primary text-black bg-light ">Aceptar</button>
+  </form>
+  
+   
+  </head>
+  
+    <footer class="bg-dark text-white">
+      <div class="container-fluid">
+          <div class="row ">
+              <div class="col col-xs-2"> 
+                  <p class="h3">Garden Store</p>
+              </div>
+              <div class="col col-xs-5 align-bottom">
+                  <p class="mb-1">José Miguel de la Barra 412, Santiago de Chile</p>
+                  <p class="mb-1">Fono: (56-2) 26382629</p>
+                  <p>Todos los derechos reservados © 2007-2022</p>
+              </div>
+              <div class="col col-xs-5"> 
+                <p class="h5">Resolvemos tus dudas</p>
+                
+                  <li>
+                  <a href="" class="text-white"> Contáctanos</a>
+                </li>
+                  
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+  
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/traducciones.js"></script>
+    <script src="js/formulario_jquery.js"></script>
+    <script src="js/service.js"></script>
 
+    <script src="js/clima.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
 
-  </body>
 </html>
+
+
