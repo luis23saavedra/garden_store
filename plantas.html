@@ -7,78 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Fertilizantes</title>
+    <title>Document</title>
 </head>
 
 <body>
-    <header class="fondo-navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <span  class="navbar-brand boton" href="#">Garden Store<img src="img/logoGardenSinFondo.png" style="height:60px; margin-left: -20px; margin-bottom: 10px;" alt=""></span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 texto-blanco ">
-                  <li class="nav-item">
-                    <a class="nav-link active hover boton" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active hover boton"  aria-current="page" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active hover boton" aria-current="page" href="abonos.html#contacto">Contacto</a>
-                  </li>
-                  <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle active hover boton" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Mi Perfil
-                    </a>
-                    <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
-                      <li><a class=" dropdown-item text-white bg-ligth hover " href="#">Información Personal</a></li>
-                      <li class="hover active"><a class="dropdown-item text-white bg-ligth hover " href="#">Historial de Ventas</a></li>
-                      <li><hr class="dropdown-divider "></li>
-                      <li><a class="dropdown-item text-white bg-ligth hover " href="#">Seguimiento de despachos</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link  hover boton btn-outline-success btn text-white"  href="ingreso.html">Iniciar sesión</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active hover boton btn btn-outline-success"  href="index.html"> Registrate</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-      </header>
 
-    <section class="py-5 fondo_categorias">
+                <div class="collapse navbar-collapse ps-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active hover" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active hover" href="categorias.html">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle active hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Mi Perfil
+                  </a>
+                            <ul class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-white bg-dark hover" href="#">Información Personal</a></li>
+                                <li class="hover"><a class="dropdown-item text-white bg-dark hover" href="#">Historial de Ventas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider hover">
+                                </li>
+                                <li><a class="dropdown-item text-white bg-dark hover" href="#">Seguimiento de despachos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  hover margen-boton btn-outline-success btn text-white" href="ingreso.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active hover margen-boton btn btn-outline-success" href="ingreso.html"> Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active hover" aria-current="page" href="webservice.html">Web Service</a>
+                        </li>
+                        <li class="nav-item">
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="py-5">
         <div class="container px-5 my-5">
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-8 col-xl-6">
                     <div class="text-center">
-                        <h2 class="fw-bolder ">Fertilizantes y abonos</h2>
-                        <p class="lead fw-normal  mb-5 text-white">Tenemos todos los fertilizantes disponibles para el cuidado de sus plantas.</p>
+                        <h2 class="fw-bolder ">Plantas</h2>
+                        <p class="lead fw-normal  mb-5 text-white">Tenemos la planta que necesitas, para todo tipo de espacios.</p>
                     </div>
                 </div>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-4 mb-5">
-                    <div class="card h-100 shadow border-0 fondo_cards">
-                        <img class="card-img-top" src="fertilizante1.png" alt="..." />
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="img/ficus.jpg" alt="..." />
                         <div class="card-body p-4">
                             <div class="badge bg-primary bg-gradient rounded-pill mb-2">Oferta</div>
                             <a class="text-decoration-none link-dark stretched-link" href="#!">
                                 <h5 class="card-title mb-3 text-white text-center">Ficus</h5>
                             </a>
-                            <p class="card-text mb-0">El Fertilizante Anafert® es granulado y completo. Contiene nitrógeno (N), Fósforo (P), Potasio (K) y microelementos que favorecen el crecimiento y desarrollo de prados y jardines en general.  Permitiendo obtener prados más verdes, resistentes, vigorosos y sanos.</p>
+                            <p class="card-text mb-0">Hermosa planta para todo tipo de ambientes.</p>
                         </div>
                         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img class="me-3" width="50" height="50" src="fertilizante1.png" alt="..." />
+                                    <img class="rounded-circle me-3" src="img/ficus.jpg" alt="..." />
                                     <div class="small">
-                                        <div class="fw-bold text-white">$18.000</div>
+                                        <div class="fw-bold text-white">$12.000</div>
                                         <div class="text-muted">March 12, 2022 &middot; 6 min read</div>
                                     </div>
                                 </div>
@@ -87,21 +89,21 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
-                    <div class="card h-100 shadow border-0 fondo_cards">
-                        <img class="card-img-top" src="fertilizante2.png" alt="..." />
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="img/longifolio.jpg" alt="..." />
                         <div class="card-body p-4">
                             <div class="badge bg-primary bg-gradient rounded-pill mb-2">Oferta</div>
                             <a class="text-decoration-none link-dark stretched-link" href="#!">
                                 <h5 class="card-title mb-3 text-white text-center">Gomero</h5>
                             </a>
-                            <p class="card-text mb-0">El Fertilizante de Hortalizas® es granulado, ha sido formulado para satisfacer las necesidades nutricionales de las hortalizas durante el período de crecimiento vegetativo y fructificación. El adecuado balance nutricional de los vegetales, estimula una mayor coloración, sabores y tamaños de los frutos. Recomendado para todo tipo de hortalizas.</p>
+                            <p class="card-text mb-0">Resistente y necesita poco regado. ideal para oficinas.</p>
                         </div>
                         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img class=" me-3" width="50" height="50" src="fertilizante2.png" alt="..." />
+                                    <img class="rounded-circle me-3" src="img/gomero.jpg" alt="..." />
                                     <div class="small">
-                                        <div class="fw-bold text-white">$55.000</div>
+                                        <div class="fw-bold text-white">$15.000</div>
                                         <div class="text-muted">March 23, 2022 &middot; 4 min read</div>
                                     </div>
                                 </div>
@@ -110,21 +112,21 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
-                    <div class="card h-100 shadow border-0 fondo_cards">
-                        <img class="card-img-top" src="fertilizante3.png" alt="..." />
+                    <div class="card h-100 shadow border-0">
+                        <img class="card-img-top" src="img/boj.jpg" alt="..." />
                         <div class="card-body p-4">
                             <div class="badge bg-primary bg-gradient rounded-pill mb-2">Oferta</div>
                             <a class="text-decoration-none link-dark stretched-link" href="#!">
                                 <h5 class="card-title mb-3 text-white text-center ">Dólar</h5>
                             </a>
-                            <p class="card-text mb-0">El Fertilizante Ferti Frutas® es granulado, importante para entregar una nutrición balanceada a árboles frutales. Este producto permite mantener un nivel nutricional óptimo que permite el desarrollo adecuado para que sean capaces de producir y soportar mayores cargas frutales en las distintas especies. Favorece el mayor desarrollo y firmeza de los frutos, acentuando la coloración, sabor y sanidad de ellos.</p>
+                            <p class="card-text mb-0">Atrae la buena suerte en los negocios además de ser hermosa y fácil de mantener.</p>
                         </div>
                         <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                             <div class="d-flex align-items-end justify-content-between">
                                 <div class="d-flex align-items-center">
-                                    <img class=" me-3" width="50" height="50" src="fertilizante3.png" alt="..." />
+                                    <img class="rounded-circle me-3" src="img/dolar.jpg" alt="..." />
                                     <div class="small">
-                                        <div class="fw-bold text-white">$35.000</div>
+                                        <div class="fw-bold text-white">$10.000</div>
                                         <div class="text-muted">April 2, 2022 &middot; 10 min read</div>
                                     </div>
                                 </div>
@@ -133,12 +135,12 @@
                     </div>
                 </div>
             </div>
-
+<input  class="btn btn-success" type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white" id="contacto">
+    <footer class="bg-dark text-white">
         <div class="container-fluid">
             <div class="row ">
                 <div class="col col-xs-2">
@@ -194,5 +196,3 @@
 </body>
 
 </html>
-
-
