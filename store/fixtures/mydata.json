@@ -1,0 +1,138 @@
+[{
+    "pk": 1,
+    "model": "store.cliente",
+    "fields": {
+        "id": "1",
+        "nombre": "cami",
+        "email": "email@email.com"
+    }
+},
+
+{
+    "pk": 2,
+    "model": "store.cliente",
+    "fields": {
+        "id": "2",
+        "nombre": "pablo",
+        "email": "email@email.com"
+    }
+},
+
+{
+    "pk": 3,
+    "model": "store.cliente",
+    "fields": {
+        "id": "3",
+        "nombre": "Luis",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 4,
+    "model": "store.cliente",
+    "fields": {
+        "id": "4",
+        "nombre": "Camilo",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 5,
+    "model": "store.cliente",
+    "fields": {
+        "id": "5",
+        "nombre": "Leonor",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 6,
+    "model": "store.cliente",
+    "fields": {
+        "id": "6",
+        "nombre": "Goku",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 7,
+    "model": "store.cliente",
+    "fields": {
+        "id": "7",
+        "nombre": "Fabian",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 8,
+    "model": "store.cliente",
+    "fields": {
+        "id": "8",
+        "nombre": "Marcelo",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 9,
+    "model": "store.cliente",
+    "fields": {
+        "id": "9",
+        "nombre": "Leonardo",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 10,
+    "model": "store.cliente",
+    "fields": {
+        "id": "10",
+        "nombre": "Maria",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 11,
+    "model": "store.cliente",
+    "fields": {
+        "id": "3",
+        "nombre": "Fabiola",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 12,
+    "model": "store.cliente",
+    "fields": {
+        "id": "12",
+        "nombre": "Miguel",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 13,
+    "model": "store.cliente",
+    "fields": {
+        "id": "13",
+        "nombre": "Sebastián",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 14,
+    "model": "store.cliente",
+    "fields": {
+        "id": "14",
+        "nombre": "Ernesto",
+        "email": "email@email.com"
+    }
+},
+{
+    "pk": 15,
+    "model": "store.cliente",
+    "fields": {
+        "id": "15",
+        "nombre": "Paola",
+        "email": "email@email.com"
+    }
+}
+]
