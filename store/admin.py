@@ -6,3 +6,5 @@ admin.site.register(Producto)
 admin.site.register(Boleta)
 admin.site.register(DetalleBoleta)
 admin.site.register(DireccionEnvio)
+
+
