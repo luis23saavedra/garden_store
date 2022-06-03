@@ -2,7 +2,7 @@ from multiprocessing import context
 from django.shortcuts import render, redirect, get_object_or_404
 
 from .models import *
-from .forms import ClienteForm, ProductoForm
+from .forms import ClienteForm, CustomerUserCreationForm, ProductoForm, UserCreationForm
 from django.contrib import messages
 # Create your views here.
 def store(request):
@@ -106,3 +106,10 @@ def agregar_cliente(request):
             data ["form"] = formulario
     
     return render (request, 'store/agregar_cliente.html', data)
+
+def registro(request):
+    data = {
+        'form': CustomerUserCreationForm()
+    }
+    
+    return render(request, 'registration/registro.html',data)
