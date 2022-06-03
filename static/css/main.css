@@ -11,7 +11,7 @@ h6 {
     color: hsl(0, 0%, 30%);
 }
 
-.box-element {
+.box-elementa {
     box-shadow: hsl(0, 0%, 80%) 0 0 16px;
     background-color: #fff;
     border-radius: 4px;
@@ -103,7 +103,15 @@ h6 {
 }
 
 .row {
-    background-color: rgba(127, 255, 212, 0.553);
+    background-color: whitesmoke;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
 }
 
 .col-lg-4 {
@@ -112,6 +120,8 @@ h6 {
 
 .container {
     margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 #card-border{
     /*border: solid 10px;*/
@@ -122,4 +132,71 @@ h6 {
 #card-border:hover{
     
     transform: scale(1.05);
+}
+.divisor{
+    width: 100%;
+    height: 5px;
+    background-color: #a9e159;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.carrucel{
+    margin-top: 0px;
+    margin-left: 0%;
+    margin-right: 0%; 
+    background-color: black;
+    
+}
+.color-texto{
+    color: white
+    ;
+}
+.tarjetas{
+    margin-top: 50px;
+    padding-left: 130px;
+    padding-right: 0px;
+    background-color: whitesmoke;
+    
+    display: block;
+}
+.links-rapidos{
+    text-align: center;
+    list-style: none;
+    background-color: #97c211;
+    
+    padding-top: 7%;
+    padding-bottom: 7%; 
+    margin-top: 50px; 
+    color: black;
+}
+.eliminar-vinetas{
+    list-style: none;
+}
+.margen-lista{
+    margin-right: 3%;
+}
+.texto-footer{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #83ae00;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+.footer-contactanos{
+    background-color: #a9e159;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.hover-div:hover{
+
+}
+.barra{
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.footer-copyright{
+    background-color: #a9e159;
 }
