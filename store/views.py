@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import *
 from .forms import ClienteForm, CustomerUserCreationForm, ProductoForm, UserCreationForm
 from django.contrib import messages
+from django.contrib.auth import authenticate, login
 # Create your views here.
 def store(request):
     products = Producto.objects.all()
@@ -111,5 +112,16 @@ def registro(request):
     data = {
         'form': CustomerUserCreationForm()
     }
+    
+    if request.method == 'POST':
+        formulario =CustomerUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            login(request, user)
+            messages.success(request, "Registro con éxito ahora puedes comprar en nuestra tienda")
+            return redirect(to="store")
+        data["form"] = formulario
+    
     
     return render(request, 'registration/registro.html',data)
