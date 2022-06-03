@@ -1,4 +1,0 @@
-Sentencias para la ejecución del proyecto:
-pip install pillow 
-pip install django seed 
-pip install cx_oracle
