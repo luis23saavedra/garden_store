@@ -6,7 +6,20 @@ from .forms import ClienteForm, CustomerUserCreationForm, ProductoForm, UserCrea
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, permission_required
+from rest_framework import viewsets
+from .serializers import ProductoSerializer
+
+
+
+
 # Create your views here.
+
+class ProductoViewSet(viewsets.ModelViewSet):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+
+
+
 def store(request):
     products = Producto.objects.all()
     context = {'products': products}
