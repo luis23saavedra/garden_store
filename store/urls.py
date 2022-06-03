@@ -12,4 +12,5 @@ urlpatterns = [
      path('listar_cliente/', views.listar_cliente, name="listar_cliente"),
      path('agregar_cliente/', views.agregar_cliente, name="agregar_cliente"),
      
+     
 ]
