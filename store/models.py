@@ -11,7 +11,7 @@ class Cliente (models.Model):
     def __str__(self):
         return self.nombre
     
-class Producto(models.Model):    
+class Producto(models.Model):   
     id = models.IntegerField( primary_key=True)
     nombre = models.CharField(max_length=200, null=True)
     precio = models.FloatField()
