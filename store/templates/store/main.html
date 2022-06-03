@@ -40,6 +40,13 @@
 
             </ul>
 
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="{% url 'tienda' %}">Tienda <span class="sr-only"></span></a>
+                </li>
+
+            </ul>
+
             {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -47,7 +54,7 @@
                 </li>
 
             </ul>
-            {% endif %} {% iif perms.app.add_producto %}
+            {% endif %} {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="{% url 'agregar_cliente' %}">Agregar cliente <span class="sr-only"></span></a>
