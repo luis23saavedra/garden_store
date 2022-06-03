@@ -73,7 +73,11 @@
                 <a href="{% url 'logout' %}" class="text-white">Cerrar sesión</a>
             </li>
             {% else %}
-            <a href="{% url 'login' %}" class="btn btn-warning text-white">Iniciar sesión Administrador</a> {% endif %}
+            <a href="{% url 'login' %}" class="btn btn-warning text-white">Iniciar sesión Administrador</a> 
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="{% url 'login' %}" class="btn btn-warning text-white">Iniciar sesión Cliente</a>
+            
+            {% endif %}
 
         </div>
     </nav>

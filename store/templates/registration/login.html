@@ -1,5 +1,5 @@
 {% extends 'store/main.html' %} {% load static %} {% block content %}
-
+{% load crispy_forms_tags %}
 
     <div class="container">
 
@@ -14,9 +14,10 @@
                         <form action="" method="post">
 
                             {% csrf_token %} 
-                            {{ form }}
-
-                            <input type="submit" value="Ingresar" >
+                            {{ form | crispy}}
+                            <hr>
+                            <input type="reset" value="Cancelar" class="btn btn-danger"> &nbsp;
+                            <input type="submit" class="btn btn-primary" value="Ingresar" >
                         
                         </form>
 
