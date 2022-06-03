@@ -5,6 +5,7 @@ from .models import *
 from .forms import ClienteForm, CustomerUserCreationForm, ProductoForm, UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required, permission_required
 # Create your views here.
 def store(request):
     products = Producto.objects.all()
@@ -28,6 +29,8 @@ def checkout(request):
     context = {}
     return render(request, 'store/checkout.html', context)
 
+
+@permission_required('store.add_producto')
 def agregar_producto(request):
     
     data= {
@@ -45,6 +48,7 @@ def agregar_producto(request):
     
     return render (request, 'store/agregar_producto.html', data)
 
+@permission_required('store.add_producto')
 def listar(request):
     
     products = Producto.objects.all()
@@ -56,6 +60,7 @@ def listar(request):
     return render(request, 'store/listar.html', data)
 
 
+@permission_required('store.add_producto')
 def editar_producto(request, id):
     
     producto = get_object_or_404(Producto, id = id)
@@ -74,6 +79,7 @@ def editar_producto(request, id):
     return render(request, 'store/editar_producto.html', data)
 
 
+@permission_required('store.add_producto')
 def eliminar_producto(request, id):
     products= get_object_or_404(Producto, id= id)
     products.delete()
@@ -81,6 +87,7 @@ def eliminar_producto(request, id):
     return redirect(to="listar")
 
 
+@permission_required('store.add_producto')
 def listar_cliente(request):
     
     clientes = Cliente.objects.all()
@@ -92,6 +99,7 @@ def listar_cliente(request):
     return render(request, 'store/listar_cliente.html', data)
 
 
+@permission_required('store.add_producto')
 def agregar_cliente(request):
     
     data= {
