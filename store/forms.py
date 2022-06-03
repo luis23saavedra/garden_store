@@ -20,7 +20,7 @@ class ProductoForm(forms.ModelForm):
         existe = Producto.objects.filter(nombre=nombre).exists()
         
         if existe:
-            raise ValidationError("Este nombre ya está registrado")
+            raise ValidationError("Nombre ya en uso")
         
         return nombre
     
