@@ -40,28 +40,28 @@
 
             </ul>
 
-            {% if user.is_authenticated %}
+            {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="{% url 'agregar_producto' %}">Agregar producto <span class="sr-only"></span></a>
                 </li>
 
             </ul>
-            {% endif %} {% if user.is_authenticated %}
+            {% endif %} {% iif perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="{% url 'agregar_cliente' %}">Agregar cliente <span class="sr-only"></span></a>
                 </li>
 
             </ul>
-            {% endif %} {% if user.is_authenticated %}
+            {% endif %} {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="{% url 'listar' %}">Listar productos <span class="sr-only"></span></a>
                 </li>
 
             </ul>
-            {% endif %} {% if user.is_authenticated %}
+            {% endif %} {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-white" href="{% url 'listar_cliente' %}">Listar clientes <span class="sr-only"></span></a>

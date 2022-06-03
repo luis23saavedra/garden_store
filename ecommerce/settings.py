@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'store.apps.StoreConfig',
     'django_seed',
     'crispy_forms',
+    'carro',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

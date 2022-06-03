@@ -5,6 +5,12 @@ from .models import *
 from .forms import ClienteForm, ProductoForm
 from django.contrib import messages
 # Create your views here.
+
+def tienda(request):
+    products = Producto.objects.all()
+    context = {'products': products}
+    return render(request, 'store/tienda.html', context)
+
 def store(request):
     products = Producto.objects.all()
     context = {'products': products}
