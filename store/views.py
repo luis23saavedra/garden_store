@@ -19,11 +19,15 @@ class ProductoViewSet(viewsets.ModelViewSet):
     serializer_class = ProductoSerializer
 
 
+def home(request):
+    
+    return render(request, 'store/home.html')
+
 
 def store(request):
     products = Producto.objects.all()
     context = {'products': products}
-    return render(request, 'store/store.html', context)
+    return render(request, 'store/tienda.html', context)
 
 def cart(request):
     

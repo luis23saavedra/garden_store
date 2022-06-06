@@ -6,8 +6,9 @@ router = routers.DefaultRouter()
 router.register('producto', views.ProductoViewSet)
 
 urlpatterns = [
-     path('', views.store, name="store"),
+     path('', views.home, name="home"),
      path('cart/', views.cart, name="cart"),
+     path('tienda/', views.store, name="store"),
      path('checkout/', views.checkout, name="checkout"),
      path('agregar_producto/', views.agregar_producto, name="agregar_producto"),
      path('listar/', views.listar, name="listar"),
