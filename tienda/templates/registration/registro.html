@@ -1,0 +1,37 @@
+{% extends 'tienda/main.html' %} {% load static %} {% block content %}
+{% load crispy_forms_tags %}
+
+    <div class="container">
+       
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <br>
+                        <h2>Registro de usuario</h2>
+                        <hr>
+
+                        <form action="" method="post">
+
+                            {% csrf_token %} 
+                            {{ form | crispy}}
+                            <a href="{% url 'tienda' %}" >ir a la tienda</a>
+                            <a href="{% url 'login' %}" >Iniciar sesion</a>
+                            <hr>
+                            <input type="reset" value="Cancelar" class="btn btn-danger"> &nbsp;
+                            <input type="submit" class="btn btn-primary" value="Registrar" >
+                        
+                        </form>
+
+                    </div>
+                </div>
+<br>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    {% endblock%}

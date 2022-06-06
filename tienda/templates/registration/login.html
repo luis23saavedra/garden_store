@@ -1,0 +1,36 @@
+{% extends 'tienda/main.html' %} {% load static %} {% block content %}
+{% load crispy_forms_tags %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Ingresa tus datos de ingreso</h2>
+                        <hr>
+
+                        <form action="" method="post">
+
+                            {% csrf_token %} 
+                            {{ form | crispy}}
+                            &nbsp
+                            <a href="{% url 'tienda' %}" >ir a la tienda</a>
+                            <hr>
+                            <input type="reset" value="Cancelar" class="btn btn-danger"> &nbsp;
+                            <input type="submit" class="btn btn-primary" value="Ingresar" >
+                        
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    {% endblock%}

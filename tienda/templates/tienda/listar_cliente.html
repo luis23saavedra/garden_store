@@ -1,0 +1,45 @@
+{% extends 'tienda/main.html' %} {% load static %} 
+
+
+{% block content %}
+
+
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="text-center">Listado de clientes</h2>
+        <a  class="btn btn-outline-dark" href="{% url 'tienda' %}">&#x2190; Volver a tienda</a>
+            <hr>
+
+
+        <table class="table table-striped table-hover table-responsive-sm">
+            <tr>
+                <th>nombre</th>
+                <th>email</th>
+
+            </tr>
+
+            {% for c in clientes %}
+
+            <tr>
+                <td>{{ c.nombre | title }}</td>
+                <td>{{ c.email  | title }}</td>
+
+                
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock content %}
