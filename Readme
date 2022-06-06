@@ -3,3 +3,5 @@ pip install pillow
 pip install django-seed 
 pip install cx_oracle
 pip install django-crispy-forms
+Crear super usuario con nombre administrador para ingresar como administrador
+Para ingresar como cliente basta con registrarse en el botón registrate
