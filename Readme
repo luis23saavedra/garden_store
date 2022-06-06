@@ -5,3 +5,4 @@ pip install cx_oracle
 pip install django-crispy-forms
 Crear super usuario con nombre administrador para ingresar como administrador
 Para ingresar como cliente basta con registrarse en el botón registrate
+se deben crear una categoria a través de admin y 1 producto que puede ser a través de adminn a través del sistema
