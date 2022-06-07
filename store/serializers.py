@@ -1,5 +1,5 @@
 from dataclasses import field
-from .models import Producto
+from .models import Producto, Cliente
 from rest_framework import serializers
 
 class ProductoSerializer(serializers.ModelSerializer):
