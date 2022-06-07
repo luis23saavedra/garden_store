@@ -21,14 +21,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'store' %}">Tienda <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'store' %}">Tienda <span class="sr-only"></span></a>
                 </li>
 
             </ul>
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'home' %}">Home <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'home' %}">Home <span class="sr-only"></span></a>
                 </li>
             
             </ul>
@@ -36,7 +36,7 @@
             {% if user.username != 'administrador' %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'cart' %}">Carrito <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'cart' %}">Carrito <span class="sr-only"></span></a>
                 </li>
             
             </ul>
@@ -45,7 +45,7 @@
             {% if user.username != 'administrador' %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'checkout' %}">Pagar <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'checkout' %}">Pagar <span class="sr-only"></span></a>
                 </li>
             {% endif %}
             </ul>
@@ -53,28 +53,28 @@
             {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'agregar_producto' %}">Agregar producto <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'agregar_producto' %}">Agregar producto <span class="sr-only"></span></a>
                 </li>
 
             </ul>
             {% endif %} {% if perms.app.add_cliente %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'agregar_cliente' %}">Agregar cliente <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'agregar_cliente' %}">Agregar cliente <span class="sr-only"></span></a>
                 </li>
 
             </ul>
             {% endif %} {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'listar' %}">Listar productos <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'listar' %}">Listar productos <span class="sr-only"></span></a>
                 </li>
 
             </ul>
             {% endif %} {% if perms.app.add_producto %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-white" href="{% url 'listar_cliente' %}">Listar clientes <span class="sr-only"></span></a>
+                    <a class="nav-link text-white text-center" href="{% url 'listar_cliente' %}">Listar clientes <span class="sr-only"></span></a>
                 </li>
 
             </ul>
@@ -83,15 +83,18 @@
                 <a href="{% url 'logout' %}" class="text-white">Cerrar sesión</a>
             </li>
             <li>
-                <a class="text-white" href="#">@{{user.username}}</a>
+                <a class="text-white text-center" href="#">@{{user.username}}</a>
             </li>
-            {% else %}            
+            {% else %} 
+            <div class="mb-3 text-center">
             <a href="{% url 'login' %}" class="btn btn-primary text-white">Iniciar sesión Cliente</a>
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </div>
+            <div class="mb-3 text-center">
             <a href="{% url 'registro' %}" class="btn btn-warning text-black">Registrate</a>
-            
+            </div>
+            <div class="mb-3 text-center">
             <a href="{% url 'login' %}" class="btn btn-secondary text-white">Iniciar sesión Administrador</a> 
-
+            </div>
 
             
             {% endif %}
