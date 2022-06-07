@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required, permission_required
 from rest_framework import viewsets
-from .serializers import ProductoSerializer
+from .serializers import ProductoSerializer, ClienteSerializer
 
 
 
@@ -17,6 +17,10 @@ from .serializers import ProductoSerializer
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset = Producto.objects.all()
     serializer_class = ProductoSerializer
+    
+class ClienteViewSet(viewsets.ModelViewSet):
+    queryset = Cliente.objects.all()
+    serializer_class = ClienteSerializer     
 
 
 def home(request):
