@@ -4,6 +4,7 @@ pip install django-seed
 pip install cx_oracle
 pip install django-crispy-forms
 pip install djangorestframework
+Base de datos especificar xe
 Crear super usuario con nombre administrador para ingresar como administrador
 Para ingresar como cliente basta con registrarse en el botón registrate
-Se deben crear una categoria a través de admin y 1 producto que puede ser a través de adminn a través del sistema
+Se debe crear una categoria antes de crear una producto a través de admin y 1 producto que puede ser a través de adminn a través del sistema
