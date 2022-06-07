@@ -1,5 +1,5 @@
 def importe_total_carro(request):
-    total=125
+    total= 40000
     if(request.user.is_authenticated):
         if 'carro' in request.session:
             for key, value in request.session["carro"].items():

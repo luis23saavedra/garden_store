@@ -21,7 +21,7 @@
         <h6><strong>{{product.nombre}}</strong></h6>
         <hr />
 
-        <a href="{% url 'home' %}" class="btn btn-success">agregar al carro</a>
+        <a href="{% url 'cart' %}" class="btn btn-success">agregar al carro</a>
         <a class="btn btn-outline-success" href="#">Ver</a>
         <h4 style="display: inline-block; float: right">
           <strong>${{product.precio|floatformat:0}}</strong>
