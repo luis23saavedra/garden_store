@@ -9,4 +9,4 @@ Base de datos especificar xe Oracle usuario= c##prueba3 contraseña =123
 Crear super usuario con nombre administrador para ingresar como administrador
 Para ingresar como cliente basta con registrarse en el botón registrate
 Se debe crear una categoria antes de crear una producto a través de admin y 1 producto que puede ser a través de adminn a través del sistema
-El carro de compras queda maquetado para ser usado en la próxima entrega de la asignatura.
+El carro de compras y la pestaña pagar quedan maquetadas para ser usadas en la próxima entrega de la asignatura.
