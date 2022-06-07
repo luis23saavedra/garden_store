@@ -4,7 +4,7 @@ from django.urls import clear_script_prefix
 class Carro:
     def __init__(self, request):
         self.request=request
-        self.session=session.Session
+        self.session=request.Session
         carro=self.session.get("carro")
         if not carro:
             carro.self.session["carro"]={}

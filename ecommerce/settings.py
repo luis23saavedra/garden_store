@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django_seed',
     'crispy_forms',
     'rest_framework',
+    'carro',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -88,7 +89,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': '127.0.0.1:1521/orcl',
+        'NAME': '127.0.0.1:1521/xe',
         'USER': 'c##prueba3',
         'PASSWORD': '123',
         'TEST': {
