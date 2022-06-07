@@ -4,6 +4,7 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('producto', views.ProductoViewSet)
+router.register('cliente', views.ClienteViewSet)
 
 urlpatterns = [
      path('', views.home, name="home"),
@@ -18,5 +19,6 @@ urlpatterns = [
      path('agregar_cliente/', views.agregar_cliente, name="agregar_cliente"),
      path('registro/', views.registro, name="registro"),
      path('api/', include(router.urls)),
+     
      
 ]
