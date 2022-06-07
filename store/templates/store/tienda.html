@@ -1,26 +1,33 @@
-{% extends 'store/main.html' %}
-{% load static %}
-{% block content %}
+{% extends 'store/main.html' %} {% load static %} {% block content %}
+
+<div class="container">
+    
+    <div style="float:right;">
+
+        <p style="color:black;">Total: {{importe_total_carro}}</p>
 
 
-<div class="row" >
+    </div>
+
+
+  <div class="row">
     <h1 class="text-center text-black">Tienda de plantas y jardineria</h1>
     {% for product in products %}
 
     <div class="col-lg-4">
-        <img class="thumbnail" src="{{product.imagen.url}}">
-        <div class="box-element product">
-            <h6><strong>{{product.nombre}}</strong></h6>
-            <hr>
+      <img class="thumbnail" src="{{product.imagen.url}}" />
+      <div class="box-element product">
+        <h6><strong>{{product.nombre}}</strong></h6>
+        <hr />
 
-            <a href="{% url 'home' %}" class="btn btn-success">agregar al carro</a>
-            <a class="btn btn-outline-success" href="#">Ver</a>
-            <h4 style="display: inline-block; float: right"><strong>${{product.precio|floatformat:0}}</strong></h4>
-            
-
-        </div>
+        <a href="{% url 'home' %}" class="btn btn-success">agregar al carro</a>
+        <a class="btn btn-outline-success" href="#">Ver</a>
+        <h4 style="display: inline-block; float: right">
+          <strong>${{product.precio|floatformat:0}}</strong>
+        </h4>
+      </div>
     </div>
-{% endfor %}
-  
+    {% endfor %}
+  </div>
 </div>
 {% endblock content %}
