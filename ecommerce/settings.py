@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'store.apps.StoreConfig',
     'django_seed',
     'crispy_forms',
+    'rest_framework',
+    'carro',
+    'pedidos',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -73,6 +76,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'carro.context_processor.importe_total_carro'
             ],
         },
     },
@@ -88,7 +92,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/xe',
-        'USER': 'c##proyecto',
+        'USER': 'c##prueba3',
         'PASSWORD': '123',
         'TEST': {
             'USER': 'default_test',
@@ -121,7 +125,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'es-cl'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
