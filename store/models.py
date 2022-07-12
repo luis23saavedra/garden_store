@@ -13,7 +13,7 @@ class Cliente (models.Model):
     
     
 class Suscriptor(models.Model):   
-    id_suscriptor = models.IntegerField( primary_key=True)
+    
     nombre = models.CharField(max_length=200)
     direccion = models.CharField(max_length=500) 
     plan = models.CharField(max_length=20) 
