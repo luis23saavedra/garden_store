@@ -1,0 +1,51 @@
+{% extends 'store/main.html' %} {% load static %} {% block content %}
+
+<div class="container-fluid text-center align-items-center justify-content-center  row" id="containerseba">
+
+    <div class="col-4" id="widget">
+
+
+        {% if request.user.is_authenticated %} {% include "carro/widget.html" %}
+
+        <a href="{% url 'checkout' %}" class="btn btn-primary">Comprar</a> {% else %}
+        <br/>
+        <div class="alert alert-danger text-center"> Logueate para ver el carro
+        </div>
+        {% endif %}
+
+
+    </div>
+
+
+    <div class="row" id="containerseba">
+        <h1 class="text-center text-black">Tienda de plantas y jardineria</h1>
+        {% for product in products %}
+
+        <div class="col-lg-4">
+            <img class="thumbnail" src="{{product.imagen.url}}" />
+            <div class="box-element product">
+                <h6><strong>{{product.nombre}}</strong></h6>
+                <hr /> {% if user.username != 'administrador' %}
+                <div class="card-footer text-center">
+                    <a href="{% url 'carro:agregar' product.id %}" class="btn btn-success">Agregar al carro</a>
+                </div>
+                {% endif %}
+
+
+
+                <strong>${{product.precio|floatformat:0}}</strong>
+                </h4>
+            </div>
+        </div>
+
+        {% endfor %}
+
+        <div class="col-12 text-center">
+            <a class="btn btn-success  mt-3" href="{% url 'home' %}">&#x2190; Volver al home</a>
+
+        </div>
+
+    </div>
+
+</div>
+{% endblock content %}
